@@ -1,0 +1,57 @@
+ARM:
+-based on RISC (Reduced Instruction Set Computing), so it requires far fewer transistors than a CISC processor. This reduces cost, heat, and power consumption.
+-different versions of ARM ranging from 26-bit (verson1 and 2) to 64-bit
+-I am going to put focus on the 32-bit architecture
+
+
+    used signals:
+       
+
+    Architecture:
+	-version 7 (ARMv7) defines three architecture "profiles" for the Cortex cores
+	-Has several CPU modes (excluding M-profile), can only be in one mode at a time. Interrupts are used to switch modes.
+
+            
+
+    ALU:
+       
+
+
+    Instruction set:
+        -Uniform 16x 32-bit register file
+	-there is a fixed instructin width of 32 bits, this creates decreased code density but it also makes it easier to decode and pipeline. Code density is good because it allows you to get more out of memory space.
+	-Single clock execution cycle (at least mostly)
+
+	-Has a simple fast 2-priority-level interrupt subsystem that has switched register banks
+	-Has indexed addressing modes
+	-A 32-bit barrel shifter can be used for most arithmetic insructions and address calculations without causing a performance penalty (for most arithmetic instrucionts)
+	-Conditional execution of most instructions, this reduces branch overhead and compensates for the lack of a branch predictor.
+
+
+    Instructions:
+	-supports add, subtract, and multiply
+	-integer divide are only implemented by certain ARM cores (ARMv7)
+
+	-Example instructions:
+		ADD R0, R1, R2	; R1 and R2 are added, the result is put into R0
+		Mov R4, R5	; The value in R5 is copied into R4
+		CMP R0, R2	; The value in R2 is compared with the value in R0
+
+    Registers:
+	-As stated earlier, ARM as 16 32-bit user registers
+	-R0 through R7 are the same aross all modes, they are never banked
+	-R13 and R14 are banked for all modes except system mode
+	-R13 is known as the Stack Pointer register (SP)
+	-R14 is known as the Link Register (LR)
+	-R15 is knonw as the Program Counter (PC)
+	-The bits for CPSR mean something different depending on which bit of the 32 you are looking at. (Current Program Status Register)
+
+    Aditional Info:
+	-unlike most RISC architectures, ARM also has the feature for PC-relative addresing and pre- and post-increment addressing modes.
+
+
+    Sources:
+-http://www.apdl.co.uk/riscworld/volume1/issue4/armcode/index.htm
+-http://en.wikipedia.org/wiki/ARM_architecture#32-bit_architecture
+-http://www.peter-cockerell.net/aalp/html/ch-2.html
+-http://morrow.ece.wisc.edu/ECE353/arm_reference/ddi0100e_arm_arm.pdf

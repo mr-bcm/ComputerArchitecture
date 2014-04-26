@@ -1,0 +1,34 @@
+8080:
+
+    used signals:
+       d0:7 -- data bus (3-state) <->
+       a0:15 -- address bus (3-state)
+       timing/control outouts: sync, dbin, wait, wr, hlda, and inte
+             inputs: ready, hold, int, and reset
+       power inputs: +12v, +5v, -5v, gnd
+       2 clock inputs: ph1 and ph2
+
+    Architecture:
+       register array and address logic
+       alu
+       instruct register and ctrl section
+       <-> 3-state data bus buffer
+
+    Registers:
+       pc, sp, (b,c; d,e; h,l are 8-bit gen purpose regs)
+        w,z -- temp reg
+
+    ALU:
+       registers:
+           8-bit accumulator (act)
+           5-bit flag register: zero, carry, sign, parity, and aux carry
+           8-bit temp reg (tmp)
+
+
+    Instruction set:
+       instructions are 8-bit long, it may be multiple bytes
+          first byte is opcode, succeeding bytes are either data or address
+             data or address could be written across multiple bytes
+       look in pdf at location \\dropbox\Computer Science\CompArchDocs\
+          complete instruction set chapter 4-3 (pg 47)
+
