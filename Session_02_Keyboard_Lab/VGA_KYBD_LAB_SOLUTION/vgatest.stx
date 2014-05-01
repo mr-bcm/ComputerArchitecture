@@ -1,0 +1,38 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/CS401/VGA_KYBD_LAB/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Parameter xsthdpdir set to C:/CS401/VGA_KYBD_LAB/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/CS401/VGA_KYBD_LAB/vga.vhd" in Library work.
+ERROR:HDLParsers:3312 - "C:/CS401/VGA_KYBD_LAB/vga.vhd" Line 29. Undefined symbol 'red_out'.
+ERROR:HDLParsers:1209 - "C:/CS401/VGA_KYBD_LAB/vga.vhd" Line 29. red_out: Undefined symbol (last report in this block)
+ERROR:HDLParsers:507 - "C:/CS401/VGA_KYBD_LAB/vga.vhd" Line 28. ) is not a correct resolution function name
+ERROR:HDLParsers:164 - "C:/CS401/VGA_KYBD_LAB/vga.vhd" Line 29. parse error, unexpected COLON, expecting SEMICOLON or CLOSEPAR
+WARNING:HDLParsers:3481 - Library work has no units. Did not save reference file "C:/CS401/VGA_KYBD_LAB/xst/work/hdllib.ref" for it.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.73 secs
+ 
+--> 
+
+Total memory usage is 219044 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

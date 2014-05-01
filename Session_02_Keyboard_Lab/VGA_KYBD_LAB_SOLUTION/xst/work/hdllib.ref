@@ -1,0 +1,9 @@
+AR ps2_kbd arch C:/CS401/VGA_KYBD_LAB/XSA_LIB/ps2_kbd.vhd sub00/vhpl02 1392693279
+AR vga_kybd_lab behavioral C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.vhd sub00/vhpl08 1392693285
+AR test_kbd arch C:/CS401/VGA_KYBD_LAB/keybrd.vhd sub00/vhpl04 1392693281
+EN vga_kybd_lab NULL C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.vhd sub00/vhpl05 1392693284
+AR vgatest behavioral C:/CS401/VGA_KYBD_LAB/vga.vhd sub00/vhpl07 1392693283
+PH ps2_kbd_pckg NULL C:/CS401/VGA_KYBD_LAB/XSA_LIB/ps2_kbd.vhd sub00/vhpl00 1392693277
+EN ps2_kbd NULL C:/CS401/VGA_KYBD_LAB/XSA_LIB/ps2_kbd.vhd sub00/vhpl01 1392693278
+EN vgatest NULL C:/CS401/VGA_KYBD_LAB/vga.vhd sub00/vhpl06 1392693282
+EN test_kbd NULL C:/CS401/VGA_KYBD_LAB/keybrd.vhd sub00/vhpl03 1392693280
