@@ -1,0 +1,2 @@
+vhdl work "XSA_LIB/ps2_kbd.vhd"
+vhdl work "keybrd.vhd"

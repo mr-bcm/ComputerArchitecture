@@ -1,0 +1,4 @@
+vhdl work "XSA_LIB/ps2_kbd.vhd"
+vhdl work "vga.vhd"
+vhdl work "keybrd.vhd"
+vhdl work "VGA_KYBD_LAB.vhd"

@@ -1,0 +1,29 @@
+# XSA Board FPGA pin assignment constraints
+
+# PINS FOR THE PS2 KEYBOARD SERIAL INTERFACE
+net clk           loc=T9;  # CLKA INPUT FROM XSA BOARD
+net ps2_clk       loc=B16; # PS2 KEYBOARD CLOCK
+net ps2_data      loc=E13; # PS3 SERIAL DATA
+
+# PINS FOR THE LED DISPLAY ON THE FPGA BOARD
+net s<0>          loc=M6;   #      
+net s<1>          loc=M11;  #    |-S6-|  
+net s<2>          loc=N6;   #    S5  S4   
+net s<3>          loc=R7;   #    |-S3-|  
+net s<4>          loc=P10;  #    S2  S1  
+net s<5>          loc=T7;   #    |-S0-|
+net s<6>          loc=R10;  #
+
+# VGA OUTPUT/INPUT PINS
+net clk50_in      loc=P8;  # CLKB 50 MHZ INPUT FROM XSA BOARD FOR VGA
+net red_out<0>    loc=C8;  # VGA RED Out
+net red_out<1>    loc=D6;
+net red_out<2>    loc=B1;
+net green_out<0>  loc=A8;  # VGA Green Out
+net green_out<1>  loc=A5;
+net green_out<2>  loc=C3;
+net blue_out<0>   loc=C9;  # VGA Blue Out
+net blue_out<1>   loc=E7;
+net blue_out<2>   loc=D5;
+net hs_out        loc=B7;  # VGA HORIZ SYNCH
+net vs_out        loc=D8;  # VGA VERTICAL SYNCH
