@@ -68,10 +68,10 @@ begin
       );
 
   -- this maps the scancode received from the keyboard into a pattern on the 7-segment display
-  s_x <= DIG_1 when scancode = "00010110" else
-         DIG_2 when scancode = "00011110" else
-         DIG_3 when scancode = "00100110" else
-         DIG_4 when scancode = "00100101" else
+  s_x <= DIG_1 when scancode = "00011101" else
+         DIG_2 when scancode = "00011011" else
+         DIG_3 when scancode = "01000100" else
+         DIG_4 when scancode = "01001011" else
          DIG_5 when scancode = "00101110" else
          DIG_6 when scancode = "00110110" else
          DIG_7 when scancode = "00111101" else

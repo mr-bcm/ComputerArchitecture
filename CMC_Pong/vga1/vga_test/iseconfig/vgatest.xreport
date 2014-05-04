@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="1.7" >
  <header>
-  <DateModified>2014-05-01T16:31:32</DateModified>
+  <DateModified>2014-05-03T12:34:33</DateModified>
   <ModuleName>vgatest</ModuleName>
   <DateInitialized>2008-05-07T21:04:23</DateInitialized>
-  <ImplementationReportsDirectory>Z:/ComputerArchitecture/CMC_Pong/vga1/vga_test\</ImplementationReportsDirectory>
-  <SavedFilePath>Z:/ComputerArchitecture/CMC_Pong/vga1/vga_test/iseconfig/vgatest.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GitHub/COSJava/Repositories/ComputerArchitecture/CMC_Pong/vga1/vga_test\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GitHub/COSJava/Repositories/ComputerArchitecture/CMC_Pong/vga1/vga_test/iseconfig/vgatest.xreport</SavedFilePath>
   <EnableMessageFiltering>true</EnableMessageFiltering>
  </header>
  <body>

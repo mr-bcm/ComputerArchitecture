@@ -2,7 +2,7 @@
 Release 14.6 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+D:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
 -n 3 -fastpaths -xml VGA_KYBD_LAB.twx VGA_KYBD_LAB.ncd -o VGA_KYBD_LAB.twr
 VGA_KYBD_LAB.pcf -ucf VGA_KYBD_LAB.ucf
 
@@ -45,8 +45,8 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-ps2_clk     |    4.242(R)|   -2.190(R)|clk_BUFGP         |   0.000|
-ps2_data    |    3.188(R)|   -1.377(R)|clk_BUFGP         |   0.000|
+ps2_clk     |    2.916(R)|   -1.188(R)|clk_BUFGP         |   0.000|
+ps2_data    |    2.923(R)|   -1.212(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -54,13 +54,13 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-s<0>        |   10.422(R)|clk_BUFGP         |   0.000|
-s<1>        |    9.450(R)|clk_BUFGP         |   0.000|
-s<2>        |   10.058(R)|clk_BUFGP         |   0.000|
-s<3>        |    9.743(R)|clk_BUFGP         |   0.000|
-s<4>        |    9.217(R)|clk_BUFGP         |   0.000|
-s<5>        |   10.072(R)|clk_BUFGP         |   0.000|
-s<6>        |   10.054(R)|clk_BUFGP         |   0.000|
+s<0>        |   10.848(R)|clk_BUFGP         |   0.000|
+s<1>        |    9.525(R)|clk_BUFGP         |   0.000|
+s<2>        |   10.789(R)|clk_BUFGP         |   0.000|
+s<3>        |   10.050(R)|clk_BUFGP         |   0.000|
+s<4>        |    9.868(R)|clk_BUFGP         |   0.000|
+s<5>        |   10.428(R)|clk_BUFGP         |   0.000|
+s<6>        |   10.274(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -68,7 +68,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.485|         |         |         |
+clk            |    6.117|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk50_in
@@ -80,14 +80,14 @@ clk50_in       |    2.592|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Feb 17 19:14:58 2014 
+Analysis completed Sat May 03 18:16:56 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 161 MB
+Peak Memory Usage: 176 MB
 
 
 

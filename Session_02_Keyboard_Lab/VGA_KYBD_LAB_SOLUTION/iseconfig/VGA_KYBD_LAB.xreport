@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-05-01T16:27:34</DateModified>
+  <DateModified>2014-05-03T15:38:16</DateModified>
   <ModuleName>VGA_KYBD_LAB</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/bmetzelaar16/Desktop/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/iseconfig/VGA_KYBD_LAB.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/bmetzelaar16/Desktop/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/iseconfig/VGA_KYBD_LAB.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-17T19:27:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

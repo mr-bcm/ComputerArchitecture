@@ -43,6 +43,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="VGA_KYBD_LAB.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="VGA_KYBD_LAB.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="VGA_KYBD_LAB.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="VGA_KYBD_LAB_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="VGA_KYBD_LAB_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGA_KYBD_LAB_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGA_KYBD_LAB_map.mrp" xil_pn:subbranch="Map"/>
@@ -53,6 +54,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="VGA_KYBD_LAB_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="VGA_KYBD_LAB_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="VGA_KYBD_LAB_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="VGA_KYBD_LAB_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="VGA_KYBD_LAB_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="VGA_KYBD_LAB_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VGA_KYBD_LAB_vhdl.prj"/>
@@ -109,11 +111,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392693283" xil_pn:in_ck="8042307746505689674" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-4797927053604491435" xil_pn:start_ts="1392693276">
+    <transform xil_pn:end_ts="1399166172" xil_pn:in_ck="8042307746505689674" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="3079579861462820385" xil_pn:start_ts="1399166160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
@@ -130,26 +131,22 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1392693283" xil_pn:in_ck="3270874442291020769" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6324520403592606323" xil_pn:start_ts="1392693283">
+    <transform xil_pn:end_ts="1399166185" xil_pn:in_ck="3270874442291020769" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6324520403592606323" xil_pn:start_ts="1399166185">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392693287" xil_pn:in_ck="5870608408537317500" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1188929307692950785" xil_pn:start_ts="1392693283">
+    <transform xil_pn:end_ts="1399166192" xil_pn:in_ck="5870608408537317500" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1188929307692950785" xil_pn:start_ts="1399166185">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.bld"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.ngd"/>
       <outfile xil_pn:name="VGA_KYBD_LAB_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1392693291" xil_pn:in_ck="2045279313324122749" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-3037193059779134713" xil_pn:start_ts="1392693287">
+    <transform xil_pn:end_ts="1399166198" xil_pn:in_ck="2045279313324122749" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-3037193059779134713" xil_pn:start_ts="1399166192">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.pcf"/>
       <outfile xil_pn:name="VGA_KYBD_LAB_map.map"/>
       <outfile xil_pn:name="VGA_KYBD_LAB_map.mrp"/>
@@ -160,10 +157,9 @@
       <outfile xil_pn:name="VGA_KYBD_LAB_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1392693299" xil_pn:in_ck="1514087264857641494" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1392693291">
+    <transform xil_pn:end_ts="1399166218" xil_pn:in_ck="1514087264857641494" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1399166198">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.ncd"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.pad"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.par"/>
@@ -175,11 +171,9 @@
       <outfile xil_pn:name="VGA_KYBD_LAB_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1392693311" xil_pn:in_ck="3270874442291013144" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="1358112284730781905" xil_pn:start_ts="1392693304">
+    <transform xil_pn:end_ts="1399166240" xil_pn:in_ck="3270874442291013144" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="7073351447606994685" xil_pn:start_ts="1399166224">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
@@ -189,10 +183,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1392693299" xil_pn:in_ck="8926629891307936249" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1392693297">
+    <transform xil_pn:end_ts="1399166218" xil_pn:in_ck="8926629891307936249" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1399166214">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.twr"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

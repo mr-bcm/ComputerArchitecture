@@ -8,16 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bmetzelaar16/Desktop/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bmetzelaar16/Desktop/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bmetzelaar16/Desktop/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/bmetzelaar16/Desktop/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
