@@ -138,6 +138,8 @@
     <transform xil_pn:end_ts="1399166192" xil_pn:in_ck="5870608408537317500" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1188929307692950785" xil_pn:start_ts="1399166185">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.bld"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.ngd"/>
       <outfile xil_pn:name="VGA_KYBD_LAB_ngdbuild.xrpt"/>
@@ -147,6 +149,8 @@
     <transform xil_pn:end_ts="1399166198" xil_pn:in_ck="2045279313324122749" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-3037193059779134713" xil_pn:start_ts="1399166192">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="VGA_KYBD_LAB.pcf"/>
       <outfile xil_pn:name="VGA_KYBD_LAB_map.map"/>
       <outfile xil_pn:name="VGA_KYBD_LAB_map.mrp"/>
