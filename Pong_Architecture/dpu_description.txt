@@ -1,0 +1,20 @@
+cu signals:
+
+in:
+Jump
+op
+funct
+
+out:
+alucontrol(2:0) -- 1:0 determines which operation to perform: and, or, add, slt
+alusrc(1:0) -- ori instruction
+memtoreg -- signals which data is written to reg: data memory or aluresult
+memwrite -- signal to write to data memory
+branch -- used for beq and bne: ('branch'zero)+(branchzero)
+    out: pcsrc -- chooses which input to read in, pcplus4 or pcbranch
+regdst -- signals which 4 bits to store in register file: (20:16) or (15:11)
+regwrite -- signals register file to write
+
+
+register file needs another output, this will be sent to vga
+register file needs another input, comes from keyboard, output directly to rd1

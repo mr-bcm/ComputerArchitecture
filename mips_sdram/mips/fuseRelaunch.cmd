@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "Q:/jcorrigan15/CS401/HW5 (2)/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips/top_isim_beh.exe" -prj "Q:/jcorrigan15/CS401/HW5 (2)/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips/top_beh.prj" "work.top" 

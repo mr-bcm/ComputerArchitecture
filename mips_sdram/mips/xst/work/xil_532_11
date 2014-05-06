@@ -1,0 +1,124 @@
+V3 64
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" 2014/04/12.14:24:39 P.68d
+EN work/mips 1397339983 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/mips/struct 1397339984 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" \
+      EN work/mips 1397339983 CP controller CP datapath
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd" 2014/04/12.13:51:23 P.68d
+EN work/alu 1397340435 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/alu/behave 1397340436 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd" \
+      EN work/alu 1397340435
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" 2014/04/12.15:06:53 P.68d
+EN work/regfile 1397340419 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/NUMERIC_STD 1370735611
+EN work/adder 1397340420 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+EN work/sl2 1397340421 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607
+EN work/signext 1397340422 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607
+EN work/zeroext 1397340423 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607
+EN work/flopr 1397340424 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+EN work/mux2 1397340425 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607
+EN work/mux3 1397340426 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607
+EN work/mux4 1397340427 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/regfile/behave 1397340428 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      EN work/regfile 1397340419
+AR work/adder/behave 1397340429 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      EN work/adder 1397340420
+AR work/sl2/behave 1397340430 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      EN work/sl2 1397340421
+AR work/signext/behave 1397340431 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      EN work/signext 1397340422
+AR work/zeroext/behave 1397340432 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      EN work/zeroext 1397340423
+AR work/flopr/asynchronous 1397340433 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      EN work/flopr 1397340424
+AR work/mux2/behave 1397340434 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" \
+      EN work/mux2 1397340425
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd" 2014/04/12.14:56:07 P.68d
+EN work/controller 1397340441 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/controller/struct 1397340442 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd" \
+      EN work/controller 1397340441 CP maindec CP aludec CP mux3
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd" 2014/04/12.14:10:25 P.68d
+EN work/datapath 1397339981 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/datapath/struct 1397339982 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd" \
+      EN work/datapath 1397339981 CP flopr CP adder CP sl2 CP mux2 CP regfile \
+      CP signext CP zeroext CP mux4 CP alu
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd" 2014/04/12.13:51:19 P.68d
+EN work/aludec 1397340439 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/aludec/behave 1397340440 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd" \
+      EN work/aludec 1397340439
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd" 2014/04/12.13:51:18 P.68d
+EN work/maindec 1397340437 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/maindec/behave 1397340438 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd" \
+      EN work/maindec 1397340437
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd" 2014/04/12.13:51:17 P.68d
+EN work/mips_fpga_interface 1397339991 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
+      PB ieee/NUMERIC_STD 1370735611
+AR work/mips_fpga_interface/test_fpga 1397339992 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd" \
+      EN work/mips_fpga_interface 1397339991 CP top
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" 2014/04/12.13:51:16 P.68d
+EN work/dmem 1397339985 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
+AR work/dmem/behave 1397339986 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" \
+      EN work/dmem 1397339985
+EN work/imem 1397339987 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
+AR work/imem/behave 1397339988 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" \
+      EN work/imem 1397339987
+FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" 2014/04/12.13:51:14 P.68d
+EN work/top 1397339989 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/top/test 1397339990 \
+      FL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" \
+      EN work/top 1397339989 CP mips CP imem CP dmem

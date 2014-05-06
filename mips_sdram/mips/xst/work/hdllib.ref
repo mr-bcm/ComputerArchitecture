@@ -1,0 +1,41 @@
+AR dmem behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" sub00/vhpl25 1397341648
+EN adder NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl09 1397341618
+EN dmem NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" sub00/vhpl24 1397341647
+EN mux2 NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl14 1397341623
+EN mux3 NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl37 1397341624
+EN flopr NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl13 1397341622
+EN mux4 NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl38 1397341625
+EN zeroext NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl35 1397341621
+EN regfile NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl08 1397341617
+EN aludec NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd" sub00/vhpl02 1397341639
+EN datapath NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd" sub00/vhpl28 1397341643
+AR zeroext behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl36 1397341630
+EN imem NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" sub00/vhpl26 1397341649
+AR mips_fpga_interface test_fpga "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd" sub00/vhpl34 1397341654
+AR controller struct "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd" sub00/vhpl05 1397341642
+AR flopr asynchronous "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl22 1397341631
+EN maindec NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd" sub00/vhpl00 1397341637
+AR mips struct "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" sub00/vhpl15 1397341646
+EN testbench NULL C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_top.vhd sub00/vhpl30 1394402431
+AR zerodetect behave C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_building_blocks.vhd sub00/vhpl19 1394402410
+EN top NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" sub00/vhpl31 1397341651
+AR imem behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" sub00/vhpl27 1397341650
+AR maindec behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd" sub00/vhpl01 1397341638
+AR mux4 behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl40 1397341634
+AR sl2 behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl20 1397341628
+AR top test "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" sub00/vhpl32 1397341652
+EN zerodetect NULL C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_building_blocks.vhd sub00/vhpl10 1394402403
+EN mips NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" sub00/vhpl06 1397341645
+AR mux3 behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl39 1397341633
+AR signext behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl21 1397341629
+AR aludec behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd" sub00/vhpl03 1397341640
+AR datapath struct "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd" sub00/vhpl29 1397341644
+AR adder behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl18 1397341627
+EN controller NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd" sub00/vhpl04 1397341641
+AR regfile behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl17 1397341626
+EN mips_fpga_interface NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd" sub00/vhpl33 1397341653
+EN signext NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl12 1397341620
+AR mux2 behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl23 1397341632
+EN sl2 NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" sub00/vhpl11 1397341619
+AR alu behave "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd" sub00/vhpl16 1397341636
+EN alu NULL "D:/Dropbox/Computer Science/CompArch_HW5/HW5/HW5/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd" sub00/vhpl07 1397341635
