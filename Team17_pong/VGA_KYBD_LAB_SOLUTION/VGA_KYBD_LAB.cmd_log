@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.xst" -ofn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.xst" -ofn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.xst" -ofn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_KYBD_LAB.ucf -p xc3s1000-ft256-4 VGA_KYBD_LAB.ngc VGA_KYBD_LAB.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o VGA_KYBD_LAB_map.ncd VGA_KYBD_LAB.ngd VGA_KYBD_LAB.pcf 
+par -w -intstyle ise -ol high -t 1 VGA_KYBD_LAB_map.ncd VGA_KYBD_LAB.ncd VGA_KYBD_LAB.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGA_KYBD_LAB.twx VGA_KYBD_LAB.ncd -o VGA_KYBD_LAB.twr VGA_KYBD_LAB.pcf -ucf VGA_KYBD_LAB.ucf 
+bitgen -intstyle ise -f VGA_KYBD_LAB.ut VGA_KYBD_LAB.ncd 
+xst -intstyle ise -ifn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.xst" -ofn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.xst" -ofn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.xst" -ofn "C:/CS401/VGA_KYBD_LAB/VGA_KYBD_LAB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_KYBD_LAB.ucf -p xc3s1000-ft256-4 VGA_KYBD_LAB.ngc VGA_KYBD_LAB.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o VGA_KYBD_LAB_map.ncd VGA_KYBD_LAB.ngd VGA_KYBD_LAB.pcf 
+par -w -intstyle ise -ol high -t 1 VGA_KYBD_LAB_map.ncd VGA_KYBD_LAB.ncd VGA_KYBD_LAB.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGA_KYBD_LAB.twx VGA_KYBD_LAB.ncd -o VGA_KYBD_LAB.twr VGA_KYBD_LAB.pcf -ucf VGA_KYBD_LAB.ucf 
+bitgen -intstyle ise -f VGA_KYBD_LAB.ut VGA_KYBD_LAB.ncd 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_KYBD_LAB.ucf -p xc3s1000-ft256-4 VGA_KYBD_LAB.ngc VGA_KYBD_LAB.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_KYBD_LAB.ucf -p xc3s1000-ft256-4 VGA_KYBD_LAB.ngc VGA_KYBD_LAB.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o VGA_KYBD_LAB_map.ncd VGA_KYBD_LAB.ngd VGA_KYBD_LAB.pcf 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+xst -intstyle ise -ifn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.xst" -ofn "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_KYBD_LAB.ucf -p xc3s1000-ft256-4 VGA_KYBD_LAB.ngc VGA_KYBD_LAB.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o VGA_KYBD_LAB_map.ncd VGA_KYBD_LAB.ngd VGA_KYBD_LAB.pcf 
+par -w -intstyle ise -ol high -t 1 VGA_KYBD_LAB_map.ncd VGA_KYBD_LAB.ncd VGA_KYBD_LAB.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml VGA_KYBD_LAB.twx VGA_KYBD_LAB.ncd -o VGA_KYBD_LAB.twr VGA_KYBD_LAB.pcf -ucf VGA_KYBD_LAB.ucf 
+bitgen -intstyle ise -f VGA_KYBD_LAB.ut VGA_KYBD_LAB.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Dropbox\Computer Science\CompArch_HW5\HW5\HW5\MIPS_CPU_FPGA_AND_SIM_V4\mips\mips_fpga_interface.ncd
+OUTFILE=D:\Dropbox\Computer Science\CompArch_HW5\HW5\HW5\MIPS_CPU_FPGA_AND_SIM_V4\mips\mips_fpga_interface.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=D:\Dropbox\Computer Science\CompArch_HW5\HW5\HW5\MIPS_CPU_FPGA_AND_SIM_V4\mips
+LICENSE=WebPack
+USER_INFO=210795413_0_0_219

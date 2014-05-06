@@ -1,0 +1,876 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: VGA_KYBD_LAB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGA_KYBD_LAB.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGA_KYBD_LAB"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-ft256
+
+---- Source Options
+Top Module Name                    : VGA_KYBD_LAB
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd" in Library work.
+Architecture arch of Entity ps2_kbd is up to date.
+Compiling vhdl file "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd" in Library work.
+Architecture arch of Entity test_kbd is up to date.
+Compiling vhdl file "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd" in Library work.
+Architecture behavioral of Entity vgatest is up to date.
+Compiling vhdl file "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd" in Library work.
+Entity <vga_kybd_lab> compiled.
+Entity <vga_kybd_lab> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <VGA_KYBD_LAB> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <test_kbd> in library <work> (architecture <arch>) with generics.
+	FREQ = 100000
+
+Analyzing hierarchy for entity <vgatest> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ps2_kbd> in library <work> (architecture <arch>) with generics.
+	FREQ = 100000
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <VGA_KYBD_LAB> in library <work> (Architecture <behavioral>).
+Entity <VGA_KYBD_LAB> analyzed. Unit <VGA_KYBD_LAB> generated.
+
+Analyzing generic Entity <test_kbd> in library <work> (Architecture <arch>).
+	FREQ = 100000
+WARNING:Xst:753 - "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd" line 56: Unconnected output port 'parity' of component 'ps2_kbd'.
+WARNING:Xst:753 - "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd" line 56: Unconnected output port 'busy' of component 'ps2_kbd'.
+Entity <test_kbd> analyzed. Unit <test_kbd> generated.
+
+Analyzing generic Entity <ps2_kbd> in library <work> (Architecture <arch>).
+	FREQ = 100000
+Entity <ps2_kbd> analyzed. Unit <ps2_kbd> generated.
+
+Analyzing Entity <vgatest> in library <work> (Architecture <behavioral>).
+Entity <vgatest> analyzed. Unit <vgatest> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vgatest>.
+    Related source file is "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd".
+WARNING:Xst:646 - Signal <verSpeedReg<31:9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <verSpeed> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000011.
+WARNING:Xst:1780 - Signal <rp_ver_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <rp_verSpeed> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000011.
+WARNING:Xst:1780 - Signal <rp_ver> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <right_pad_w> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <right_pad_pos_hor> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <right_pad_h> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000001010000.
+WARNING:Xst:1780 - Signal <lp_ver_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <lp_verSpeed> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000011.
+WARNING:Xst:1780 - Signal <lp_ver> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <line_w> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <line_h> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <left_pad_w> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <left_pad_pos_hor> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <left_pad_h> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000001010000.
+WARNING:Xst:646 - Signal <horSpeedReg<31:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <horSpeed> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000011.
+WARNING:Xst:1780 - Signal <color> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ball_w> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000001010.
+WARNING:Xst:653 - Signal <ball_h> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000001010.
+    Found 3-bit register for signal <blue_out>.
+    Found 3-bit register for signal <red_out>.
+    Found 1-bit register for signal <vs_out>.
+    Found 3-bit register for signal <green_out>.
+    Found 1-bit register for signal <hs_out>.
+    Found 10-bit subtractor for signal <$sub0000> created at line 164.
+    Found 9-bit subtractor for signal <$sub0001> created at line 165.
+    Found 10-bit register for signal <ball_hor>.
+    Found 10-bit register for signal <ball_hor_next>.
+    Found 10-bit adder for signal <ball_hor_next$add0000> created at line 116.
+    Found 9-bit register for signal <ball_ver>.
+    Found 32-bit adder for signal <ball_ver$add0000> created at line 94.
+    Found 9-bit register for signal <ball_ver_next>.
+    Found 9-bit adder for signal <ball_ver_next$add0000> created at line 115.
+    Found 10-bit comparator greater for signal <blue_out$cmp_gt0000> created at line 182.
+    Found 9-bit comparator greater for signal <blue_out$cmp_gt0001> created at line 182.
+    Found 32-bit comparator less for signal <blue_out$cmp_lt0000> created at line 182.
+    Found 32-bit comparator less for signal <blue_out$cmp_lt0001> created at line 182.
+    Found 1-bit register for signal <clk25>.
+    Found 32-bit up counter for signal <cnt>.
+    Found 32-bit up counter for signal <cnt0>.
+    Found 32-bit up counter for signal <cnt1>.
+    Found 10-bit up counter for signal <hcounter>.
+    Found 32-bit register for signal <horSpeedNext>.
+    Found 32-bit adder for signal <horSpeedNext$addsub0000> created at line 113.
+    Found 10-bit comparator greatequal for signal <horSpeedNext$cmp_ge0000> created at line 110.
+    Found 10-bit comparator lessequal for signal <horSpeedNext$cmp_le0000> created at line 111.
+    Found 10-bit comparator less for signal <horSpeedNext$cmp_lt0000> created at line 110.
+    Found 32-bit register for signal <horSpeedReg>.
+    Found 10-bit comparator greater for signal <hs_out$cmp_gt0000> created at line 212.
+    Found 10-bit comparator less for signal <hs_out$cmp_lt0000> created at line 212.
+    Found 32-bit updown accumulator for signal <left_pad_pos_ver>.
+    Found 32-bit adder for signal <left_pad_pos_ver$add0000> created at line 131.
+    Found 32-bit adder for signal <left_pad_pos_ver$addsub0000> created at line 128.
+    Found 32-bit comparator greatequal for signal <left_pad_pos_ver$cmp_ge0000> created at line 131.
+    Found 32-bit comparator less for signal <left_pad_pos_ver$cmp_lt0000> created at line 131.
+    Found 32-bit adder for signal <red_out$add0000> created at line 182.
+    Found 32-bit adder for signal <red_out$add0001> created at line 182.
+    Found 32-bit comparator greatequal for signal <red_out$cmp_ge0000> created at line 182.
+    Found 32-bit comparator greatequal for signal <red_out$cmp_ge0001> created at line 182.
+    Found 10-bit comparator greater for signal <red_out$cmp_gt0000> created at line 173.
+    Found 9-bit comparator greater for signal <red_out$cmp_gt0001> created at line 173.
+    Found 10-bit comparator greater for signal <red_out$cmp_gt0002> created at line 176.
+    Found 10-bit comparator lessequal for signal <red_out$cmp_le0000> created at line 182.
+    Found 9-bit comparator lessequal for signal <red_out$cmp_le0001> created at line 182.
+    Found 10-bit comparator less for signal <red_out$cmp_lt0000> created at line 173.
+    Found 9-bit comparator less for signal <red_out$cmp_lt0001> created at line 173.
+    Found 10-bit comparator less for signal <red_out$cmp_lt0002> created at line 176.
+    Found 10-bit subtractor for signal <red_out$sub0000> created at line 164.
+    Found 9-bit subtractor for signal <red_out$sub0001> created at line 165.
+    Found 32-bit updown accumulator for signal <right_pad_pos_ver>.
+    Found 32-bit adder for signal <right_pad_pos_ver$add0000> created at line 147.
+    Found 32-bit adder for signal <right_pad_pos_ver$addsub0000> created at line 144.
+    Found 32-bit comparator greatequal for signal <right_pad_pos_ver$cmp_ge0000> created at line 147.
+    Found 32-bit comparator lessequal for signal <right_pad_pos_ver$cmp_le0000> created at line 148.
+    Found 32-bit comparator less for signal <right_pad_pos_ver$cmp_lt0000> created at line 147.
+    Found 10-bit up counter for signal <vcounter>.
+    Found 32-bit register for signal <verSpeedNext>.
+    Found 32-bit adder for signal <verSpeedNext$addsub0000> created at line 106.
+    Found 9-bit comparator greatequal for signal <verSpeedNext$cmp_ge0000> created at line 103.
+    Found 9-bit comparator lessequal for signal <verSpeedNext$cmp_le0000> created at line 104.
+    Found 9-bit comparator less for signal <verSpeedNext$cmp_lt0000> created at line 103.
+    Found 32-bit register for signal <verSpeedReg>.
+    Found 10-bit comparator greater for signal <vs_out$cmp_gt0000> created at line 224.
+    Found 10-bit comparator less for signal <vs_out$cmp_lt0000> created at line 224.
+    Summary:
+	inferred   5 Counter(s).
+	inferred   2 Accumulator(s).
+	inferred 178 D-type flip-flop(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred  29 Comparator(s).
+Unit <vgatest> synthesized.
+
+
+Synthesizing Unit <ps2_kbd>.
+    Related source file is "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd".
+    Found 4-bit up counter for signal <bitcnt_r>.
+    Found 1-bit register for signal <error_r>.
+    Found 1-bit register for signal <keyrel_r>.
+    Found 5-bit register for signal <ps2_clk_r>.
+    Found 1-bit register for signal <rdy_r>.
+    Found 10-bit register for signal <sc_r>.
+    Found 14-bit register for signal <timer_r>.
+    Found 14-bit adder for signal <timer_x$addsub0000> created at line 112.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ps2_kbd> synthesized.
+
+
+Synthesizing Unit <test_kbd>.
+    Related source file is "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd".
+    Found 7-bit register for signal <s>.
+    Found 8-bit register for signal <scancode_bus>.
+    Summary:
+	inferred  15 D-type flip-flop(s).
+Unit <test_kbd> synthesized.
+
+
+Synthesizing Unit <VGA_KYBD_LAB>.
+    Related source file is "D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd".
+WARNING:Xst:1780 - Signal <scancode_bus2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <VGA_KYBD_LAB> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 14
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 14-bit adder                                          : 1
+ 32-bit adder                                          : 7
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 2
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 3
+ 4-bit up counter                                      : 1
+# Registers                                            : 22
+ 1-bit register                                        : 6
+ 10-bit register                                       : 3
+ 14-bit register                                       : 1
+ 3-bit register                                        : 3
+ 32-bit register                                       : 4
+ 5-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 2
+# Comparators                                          : 24
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator greater                             : 5
+ 10-bit comparator less                                : 5
+ 10-bit comparator lessequal                           : 2
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator greater                              : 2
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <green_out_0> in Unit <vgatest_object> is equivalent to the following 2 FFs/Latches, which will be removed : <green_out_1> <green_out_2> 
+INFO:Xst:2261 - The FF/Latch <blue_out_0> in Unit <vgatest_object> is equivalent to the following 2 FFs/Latches, which will be removed : <blue_out_1> <blue_out_2> 
+INFO:Xst:2261 - The FF/Latch <red_out_0> in Unit <vgatest_object> is equivalent to the following 2 FFs/Latches, which will be removed : <red_out_1> <red_out_2> 
+WARNING:Xst:2677 - Node <verSpeedNext_9> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_10> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_11> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_12> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_13> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_14> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_15> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_16> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_17> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_18> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_19> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_20> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_21> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_22> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_23> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_24> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_25> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_26> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_27> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_28> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_29> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_30> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_31> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_10> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_11> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_12> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_13> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_14> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_15> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_16> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_17> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_18> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_19> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_20> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_21> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_22> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_23> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_24> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_25> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_26> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_27> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_28> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_29> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_30> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedNext_31> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_10> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_11> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_12> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_13> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_14> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_15> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_16> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_17> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_18> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_19> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_20> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_21> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_22> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_23> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_24> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_25> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_26> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_27> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_28> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_29> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_30> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <horSpeedReg_31> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_9> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_10> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_11> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_12> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_13> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_14> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_15> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_16> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_17> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_18> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_19> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_20> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_21> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_22> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_23> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_24> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_25> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_26> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_27> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_28> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_29> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_30> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedReg_31> of sequential type is unconnected in block <vgatest_object>.
+WARNING:Xst:2677 - Node <verSpeedNext_9> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_10> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_11> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_12> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_13> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_14> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_15> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_16> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_17> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_18> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_19> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_20> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_21> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_22> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_23> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_24> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_25> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_26> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_27> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_28> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_29> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_30> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedNext_31> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_10> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_11> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_12> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_13> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_14> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_15> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_16> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_17> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_18> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_19> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_20> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_21> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_22> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_23> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_24> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_25> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_26> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_27> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_28> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_29> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_30> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedNext_31> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_10> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_11> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_12> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_13> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_14> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_15> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_16> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_17> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_18> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_19> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_20> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_21> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_22> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_23> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_24> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_25> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_26> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_27> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_28> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_29> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_30> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <horSpeedReg_31> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_9> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_10> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_11> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_12> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_13> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_14> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_15> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_16> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_17> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_18> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_19> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_20> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_21> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_22> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_23> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_24> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_25> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_26> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_27> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_28> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_29> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_30> of sequential type is unconnected in block <vgatest>.
+WARNING:Xst:2677 - Node <verSpeedReg_31> of sequential type is unconnected in block <vgatest>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 14-bit adder                                          : 1
+ 32-bit adder                                          : 5
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 135
+ Flip-Flops                                            : 135
+# Comparators                                          : 24
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator greater                             : 5
+ 10-bit comparator less                                : 5
+ 10-bit comparator lessequal                           : 2
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 2
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator greater                              : 2
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <green_out_0> in Unit <vgatest> is equivalent to the following 2 FFs/Latches, which will be removed : <green_out_1> <green_out_2> 
+INFO:Xst:2261 - The FF/Latch <blue_out_0> in Unit <vgatest> is equivalent to the following 2 FFs/Latches, which will be removed : <blue_out_1> <blue_out_2> 
+INFO:Xst:2261 - The FF/Latch <red_out_0> in Unit <vgatest> is equivalent to the following 2 FFs/Latches, which will be removed : <red_out_1> <red_out_2> 
+WARNING:Xst:1293 - FF/Latch <verSpeedNext_0> has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <horSpeedNext_0> has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <horSpeedReg_0> has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <verSpeedReg_0> has a constant value of 1 in block <vgatest>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <horSpeedNext_2> in Unit <vgatest> is equivalent to the following 7 FFs/Latches, which will be removed : <horSpeedNext_3> <horSpeedNext_4> <horSpeedNext_5> <horSpeedNext_6> <horSpeedNext_7> <horSpeedNext_8> <horSpeedNext_9> 
+INFO:Xst:2261 - The FF/Latch <verSpeedNext_2> in Unit <vgatest> is equivalent to the following 6 FFs/Latches, which will be removed : <verSpeedNext_3> <verSpeedNext_4> <verSpeedNext_5> <verSpeedNext_6> <verSpeedNext_7> <verSpeedNext_8> 
+INFO:Xst:2261 - The FF/Latch <verSpeedReg_2> in Unit <vgatest> is equivalent to the following 6 FFs/Latches, which will be removed : <verSpeedReg_3> <verSpeedReg_4> <verSpeedReg_5> <verSpeedReg_6> <verSpeedReg_7> <verSpeedReg_8> 
+INFO:Xst:2261 - The FF/Latch <horSpeedReg_2> in Unit <vgatest> is equivalent to the following 7 FFs/Latches, which will be removed : <horSpeedReg_3> <horSpeedReg_4> <horSpeedReg_5> <horSpeedReg_6> <horSpeedReg_7> <horSpeedReg_8> <horSpeedReg_9> 
+
+Optimizing unit <VGA_KYBD_LAB> ...
+
+Optimizing unit <vgatest> ...
+
+Optimizing unit <ps2_kbd> ...
+
+Optimizing unit <test_kbd> ...
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_7> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_6> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_5> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_4> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_3> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_2> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_1> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+WARNING:Xst:2677 - Node <test_kbd_object1/scancode_bus_0> of sequential type is unconnected in block <VGA_KYBD_LAB>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VGA_KYBD_LAB, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 147
+ Flip-Flops                                            : 147
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : VGA_KYBD_LAB.ngr
+Top Level Output File Name         : VGA_KYBD_LAB
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 618
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 93
+#      LUT2                        : 58
+#      LUT2_D                      : 1
+#      LUT2_L                      : 3
+#      LUT3                        : 42
+#      LUT3_D                      : 6
+#      LUT3_L                      : 5
+#      LUT4                        : 105
+#      LUT4_D                      : 5
+#      LUT4_L                      : 8
+#      MUXCY                       : 156
+#      MUXF5                       : 8
+#      VCC                         : 1
+#      XORCY                       : 117
+# FlipFlops/Latches                : 147
+#      FDC                         : 15
+#      FDCE                        : 16
+#      FDE                         : 53
+#      FDP                         : 5
+#      FDR                         : 46
+#      FDRE                        : 10
+#      FDRS                        : 1
+#      FDS                         : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 20
+#      IBUF                        : 2
+#      OBUF                        : 18
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-4 
+
+ Number of Slices:                      203  out of   7680     2%  
+ Number of Slice Flip Flops:            147  out of  15360     0%  
+ Number of 4 input LUTs:                335  out of  15360     2%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    173    12%  
+ Number of GCLKs:                         3  out of      8    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+vgatest_object/clk251              | BUFG                   | 103   |
+clk50_in                           | BUFGP                  | 1     |
+clk                                | BUFGP                  | 43    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------+-------------------------------------+-------+
+Control Signal                                            | Buffer(FF name)                     | Load  |
+----------------------------------------------------------+-------------------------------------+-------+
+test_kbd_object1/u0/error_r(test_kbd_object1/u0/error_r:Q)| NONE(test_kbd_object1/u0/bitcnt_r_0)| 36    |
+----------------------------------------------------------+-------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 13.438ns (Maximum Frequency: 74.415MHz)
+   Minimum input arrival time before clock: 1.825ns
+   Maximum output required time after clock: 7.271ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'vgatest_object/clk251'
+  Clock period: 13.438ns (frequency: 74.415MHz)
+  Total number of paths / destination ports: 44061 / 212
+-------------------------------------------------------------------------
+Delay:               13.438ns (Levels of Logic = 31)
+  Source:            vgatest_object/cnt_1 (FF)
+  Destination:       vgatest_object/horSpeedNext_2 (FF)
+  Source Clock:      vgatest_object/clk251 rising
+  Destination Clock: vgatest_object/clk251 rising
+
+  Data Path: vgatest_object/cnt_1 to vgatest_object/horSpeedNext_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   1.216  vgatest_object/cnt_1 (vgatest_object/cnt_1)
+     LUT1:I0->O            1   0.551   0.000  vgatest_object/Madd_ball_ver_add0000_cy<1>_rt (vgatest_object/Madd_ball_ver_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  vgatest_object/Madd_ball_ver_add0000_cy<1> (vgatest_object/Madd_ball_ver_add0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<2> (vgatest_object/Madd_ball_ver_add0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<3> (vgatest_object/Madd_ball_ver_add0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<4> (vgatest_object/Madd_ball_ver_add0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<5> (vgatest_object/Madd_ball_ver_add0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<6> (vgatest_object/Madd_ball_ver_add0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<7> (vgatest_object/Madd_ball_ver_add0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<8> (vgatest_object/Madd_ball_ver_add0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<9> (vgatest_object/Madd_ball_ver_add0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<10> (vgatest_object/Madd_ball_ver_add0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<11> (vgatest_object/Madd_ball_ver_add0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<12> (vgatest_object/Madd_ball_ver_add0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<13> (vgatest_object/Madd_ball_ver_add0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<14> (vgatest_object/Madd_ball_ver_add0000_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<15> (vgatest_object/Madd_ball_ver_add0000_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<16> (vgatest_object/Madd_ball_ver_add0000_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<17> (vgatest_object/Madd_ball_ver_add0000_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<18> (vgatest_object/Madd_ball_ver_add0000_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<19> (vgatest_object/Madd_ball_ver_add0000_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/Madd_ball_ver_add0000_cy<20> (vgatest_object/Madd_ball_ver_add0000_cy<20>)
+     XORCY:CI->O           1   0.904   1.140  vgatest_object/Madd_ball_ver_add0000_xor<21> (vgatest_object/ball_ver_add0000<21>)
+     LUT4:I0->O            1   0.551   0.000  vgatest_object/ball_ver_cmp_eq0000_wg_lut<0> (vgatest_object/ball_ver_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  vgatest_object/ball_ver_cmp_eq0000_wg_cy<0> (vgatest_object/ball_ver_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/ball_ver_cmp_eq0000_wg_cy<1> (vgatest_object/ball_ver_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/ball_ver_cmp_eq0000_wg_cy<2> (vgatest_object/ball_ver_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/ball_ver_cmp_eq0000_wg_cy<3> (vgatest_object/ball_ver_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  vgatest_object/ball_ver_cmp_eq0000_wg_cy<4> (vgatest_object/ball_ver_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.303   0.869  vgatest_object/ball_ver_cmp_eq0000_wg_cy<5> (vgatest_object/ball_ver_cmp_eq0000_wg_cy<5>)
+     LUT3:I2->O           76   0.551   2.131  vgatest_object/ball_ver_cmp_eq0000_wg_cy<7>1 (vgatest_object/ball_ver_cmp_eq0000)
+     LUT4:I3->O            2   0.551   0.877  vgatest_object/verSpeedNext_not000237 (vgatest_object/verSpeedNext_not0002)
+     FDE:CE                    0.602          vgatest_object/verSpeedNext_1
+    ----------------------------------------
+    Total                     13.438ns (7.205ns logic, 6.233ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50_in'
+  Clock period: 2.623ns (frequency: 381.243MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.623ns (Levels of Logic = 0)
+  Source:            vgatest_object/clk25 (FF)
+  Destination:       vgatest_object/clk25 (FF)
+  Source Clock:      clk50_in rising
+  Destination Clock: clk50_in rising
+
+  Data Path: vgatest_object/clk25 to vgatest_object/clk25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   0.877  vgatest_object/clk25 (vgatest_object/clk251)
+     FDR:R                     1.026          vgatest_object/clk25
+    ----------------------------------------
+    Total                      2.623ns (1.746ns logic, 0.877ns route)
+                                       (66.6% logic, 33.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.783ns (frequency: 128.485MHz)
+  Total number of paths / destination ports: 603 / 63
+-------------------------------------------------------------------------
+Delay:               7.783ns (Levels of Logic = 4)
+  Source:            test_kbd_object1/u0/timer_r_3 (FF)
+  Destination:       test_kbd_object1/u0/bitcnt_r_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: test_kbd_object1/u0/timer_r_3 to test_kbd_object1/u0/bitcnt_r_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.216  test_kbd_object1/u0/timer_r_3 (test_kbd_object1/u0/timer_r_3)
+     LUT4:I0->O            1   0.551   0.996  test_kbd_object1/u0/ps2_clk_quiet_cmp_eq000015 (test_kbd_object1/u0/ps2_clk_quiet_cmp_eq000015)
+     LUT4:I1->O            6   0.551   1.198  test_kbd_object1/u0/ps2_clk_quiet_cmp_eq000056 (test_kbd_object1/u0/ps2_clk_quiet_cmp_eq0000)
+     LUT4_D:I1->O          3   0.551   1.246  test_kbd_object1/u0/bitcnt_r_and00001 (test_kbd_object1/u0/bitcnt_r_and0000)
+     LUT2:I0->O            1   0.551   0.000  test_kbd_object1/u0/Mcount_bitcnt_r_eqn_01 (test_kbd_object1/u0/Mcount_bitcnt_r_eqn_0)
+     FDCE:D                    0.203          test_kbd_object1/u0/bitcnt_r_0
+    ----------------------------------------
+    Total                      7.783ns (3.127ns logic, 4.656ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.825ns (Levels of Logic = 1)
+  Source:            ps2_data (PAD)
+  Destination:       test_kbd_object1/u0/sc_r_9 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ps2_data to test_kbd_object1/u0/sc_r_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.801  ps2_data_IBUF (ps2_data_IBUF)
+     FDCE:D                    0.203          test_kbd_object1/u0/sc_r_9
+    ----------------------------------------
+    Total                      1.825ns (1.024ns logic, 0.801ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vgatest_object/clk251'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              7.271ns (Levels of Logic = 1)
+  Source:            vgatest_object/blue_out_0 (FF)
+  Destination:       blue_out<2> (PAD)
+  Source Clock:      vgatest_object/clk251 rising
+
+  Data Path: vgatest_object/blue_out_0 to blue_out<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              3   0.720   0.907  vgatest_object/blue_out_0 (vgatest_object/blue_out_0)
+     OBUF:I->O                 5.644          blue_out_2_OBUF (blue_out<2>)
+    ----------------------------------------
+    Total                      7.271ns (6.364ns logic, 0.907ns route)
+                                       (87.5% logic, 12.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            test_kbd_object1/s_6 (FF)
+  Destination:       s<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: test_kbd_object1/s_6 to s<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.720   0.801  test_kbd_object1/s_6 (test_kbd_object1/s_6)
+     OBUF:I->O                 5.644          s_6_OBUF (s<6>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.29 secs
+ 
+--> 
+
+Total memory usage is 266200 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  216 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

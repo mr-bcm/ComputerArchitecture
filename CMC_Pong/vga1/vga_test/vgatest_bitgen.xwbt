@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=Q:\bmetzelaar16\CS373_DLD\Final_Project\CMC_Pong_v2\vga1\vga_test\vgatest.ncd
-OUTFILE=Q:\bmetzelaar16\CS373_DLD\Final_Project\CMC_Pong_v2\vga1\vga_test\vgatest.bit
-FAMILY=Spartan3
-PART=xc3s1000-4ft256
-WORKINGDIR=Q:\bmetzelaar16\CS373_DLD\Final_Project\CMC_Pong_v2\vga1\vga_test
-LICENSE=WebPack
-USER_INFO=210788141_0_0_457

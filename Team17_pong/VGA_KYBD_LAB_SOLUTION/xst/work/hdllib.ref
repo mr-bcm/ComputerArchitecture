@@ -1,0 +1,9 @@
+AR ps2_kbd arch D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd sub00/vhpl02 1399166165
+AR vga_kybd_lab behavioral D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd sub00/vhpl08 1399166171
+AR test_kbd arch D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd sub00/vhpl04 1399166167
+EN vga_kybd_lab NULL D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd sub00/vhpl05 1399166170
+AR vgatest behavioral D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd sub00/vhpl07 1399166169
+PH ps2_kbd_pckg NULL D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd sub00/vhpl00 1399166163
+EN ps2_kbd NULL D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd sub00/vhpl01 1399166164
+EN vgatest NULL D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/vga.vhd sub00/vhpl06 1399166168
+EN test_kbd NULL D:/GitHub/COSJava/Repositories/ComputerArchitecture/Session_02_Keyboard_Lab/VGA_KYBD_LAB_SOLUTION/keybrd.vhd sub00/vhpl03 1399166166

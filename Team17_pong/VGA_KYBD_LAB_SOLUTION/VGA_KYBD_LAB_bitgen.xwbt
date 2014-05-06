@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\COSJava\Repositories\ComputerArchitecture\Session_02_Keyboard_Lab\VGA_KYBD_LAB_SOLUTION\VGA_KYBD_LAB.ncd
+OUTFILE=D:\GitHub\COSJava\Repositories\ComputerArchitecture\Session_02_Keyboard_Lab\VGA_KYBD_LAB_SOLUTION\VGA_KYBD_LAB.bit
+FAMILY=Spartan3
+PART=xc3s1000-4ft256
+WORKINGDIR=D:\GitHub\COSJava\Repositories\ComputerArchitecture\Session_02_Keyboard_Lab\VGA_KYBD_LAB_SOLUTION
+LICENSE=WebPack
+USER_INFO=210795413_0_0_219
